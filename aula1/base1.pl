@@ -3,7 +3,7 @@
  *
  *   Essa base possui: 
  *       >>> 6 - fatos
- *       >>> 4 - regras
+ *       >>> 1 - regra
  */
 
 festa .                    %% Fato/Átomo/Termo simples.
@@ -14,4 +14,4 @@ ouvemusica(abel) .         %% Fato/Functor/Termo Composto.
 ouvemusica(frank).         %% Fato/Functor/Termo Composto.
 tocaviolao(frank).         %% Fato/Functor/Termo Composto.
 
-tocaviolao(abel) :- feliz(abel), ouvemusica(abel).
+tocaviolao(abel) :- feliz(abel), ouvemusica(abel). %% Regra/functor/Termo composto.
