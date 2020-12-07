@@ -8,9 +8,7 @@ concat(ListConcatened, FirstList, SecondList) :-
 
 concat(ListConcatened, FirstList, SecondList) :- 
     [] = FirstList, 
-    [ First | Tail ] = SecondList,
-    concat(SubListConcatened, FirstList, Tail),
-    ListConcatened = [First | SubListConcatened].
+    ListConcatened = SecondList.
 
 
 concat(ListConcatened, FirstList, SecondList) :- 
